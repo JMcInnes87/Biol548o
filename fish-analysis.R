@@ -1,5 +1,5 @@
 # Fish_data allows you to upload the csv file for fish size and growth rate data
-fish_data = read.csv("Gaeta_etal_CLC_data.csv")
+fish_data = read.csv("Gaeta_etal_CLC_data_1.csv")
 library(dplyr)
 fish_data_cat = fish_data %>% 
   mutate(length_cat = ifelse(length > 200, "big", "small"))
