@@ -104,3 +104,14 @@ ds_data <- filter(surveys, species_id == "DS")
 ds_data_by_year <- group_by(ds_data, year)
 ds_weight_by_year <- summarize(ds_data_by_year,
                                avg_weight = mean(weight, na.rm = TRUE))
+
+#Exercise 3: Use pipes to work through survey data
+surveys %>%
+mutate(year, species_id=weight/1000)%>%
+na.omit() %>%
+select(year,month, day, species_id)%>%
+filter(species_id =="SH")%>%
+group_by(species_id)%>%
+summarize(species_id, abundance = n())%>%
+filter(species_id == weight)
+  
