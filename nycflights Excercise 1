@@ -1,0 +1,10 @@
+#Imagine you wanted to draw (approximately) the route each plane flies from its origin to its destination. What variables would you need? What tables would you need to combine?
+
+In order to draw the approximate route each plane flies you would have to use the the flight table with the flight, origin, destination, day, hour variables and you would need to relate this to the planes table and weather table and airlines table.
+
+I forgot to draw the relationship between weather and airports. What is the relationship and how should it appear in the diagram? 
+The relationship is the faa and origin variables.
+
+weather only contains information for the origin (NYC) airports. If it contained weather records for all airports in the USA, what additional relation would it define with flights?
+
+It would likely deal with the year, month, and day variables.
