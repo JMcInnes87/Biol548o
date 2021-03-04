@@ -23,3 +23,7 @@ grep(".R$", dir(), value=TRUE)
 grep('i|t', levels(gDat$country), value = TRUE)%>%
 grep("land$", levels(gDat$country), value = TRUE)  
 
+#Excercise 4
+continents <- unique(gDat$continent)
+grep("o", continents, value = TRUE)
+#Europe
