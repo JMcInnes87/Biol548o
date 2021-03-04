@@ -18,3 +18,8 @@ grep("ee", country, value = TRUE)
 wd <- getwd()
 dir(wd)
 grep(".R$", dir(), value=TRUE)
+
+#Excercise 3
+grep('i|t', levels(gDat$country), value = TRUE)%>%
+grep("land$", levels(gDat$country), value = TRUE)  
+
