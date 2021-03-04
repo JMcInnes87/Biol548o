@@ -5,10 +5,16 @@ install.packages("gapminder")
 gDat <- gapminder::gapminder
 str(gDat)
 
-#Excercise 1
+#Exercise 1
 #Line of code for all countries with "ee"
 gDat
 gDat$country
 country <- unique(gDat$country)
 grep("ee", country, value = TRUE)
 #Greece is the country with "ee" string
+
+#Finding All R Files in Main Folder
+#Exercise 2
+wd <- getwd()
+dir(wd)
+grep(".R$", dir(), value=TRUE)
