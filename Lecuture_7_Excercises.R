@@ -10,3 +10,22 @@ return(weight_in_grams)
 pounds_to_grams(3.75)
 [1] 1700.97
 
+#Exercise 2
+
+#Function for calculating mass from length
+
+get_mass_from_length_theropoda <- function(length){
+  mass <- 0.73 * length ^ 3.63
+  return(mass)
+}
+#This function calculates the mass of an object from the length of an object. In this example the mass of a theropod dinosuar from the length.
+#Calculate the mass of a 16 m spinosaurus using the function
+get_mass_from_length_theropoda(16)
+#[1] 17150.56
+
+get_mass_from_length <- function(length, a, b){
+  mass <- 0.73 * length ^ 3.63
+  return(mass)
+}
+get_mass_from_length(26, 214.44, 1.46)
+b
