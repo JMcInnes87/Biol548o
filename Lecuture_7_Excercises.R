@@ -28,4 +28,12 @@ get_mass_from_length <- function(length, a, b){
   return(mass)
 }
 get_mass_from_length(26, 214.44, 1.46)
-b
+
+#Excercise 3
+#Estimate the mass of Sauropoda
+
+get_mass_from_length_set <- function(length, a = 16, b = 1.46){
+  mass <- a * length ^ b
+  return(mass)
+}
+get_mass_from_length_set
