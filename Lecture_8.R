@@ -21,3 +21,12 @@ x > y
 #4. Each value in masses is greater than 40.
 mass > 40
 #True
+
+#Exercise 2
+age_class = "sapling"
+if (age_class == "sapling"){
+  y <- 10
+}
+y
+
+  
