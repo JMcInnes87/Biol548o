@@ -37,3 +37,14 @@ get_mass_from_length_set <- function(length, a = 16, b = 1.46){
   return(mass)
 }
 get_mass_from_length_set
+
+#Excercise 4
+# function that converts kilograms into pounds
+kilograms_to_pounds <- function(weight) {
+  weight_in_pounds <- weight * 2.205
+  return(weight_in_pounds)
+}
+#Estimate the weight in pounds of a 12 m Stegosaurus
+get_mass_from_length <- function(length)
+mass <- 10.95 * (12)^ 2.64
+get_mass_from_length
