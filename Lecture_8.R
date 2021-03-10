@@ -29,4 +29,29 @@ if (age_class == "sapling"){
 }
 y
 
+#Exercise 3
+#1
+age_class <- "seedling"
+if (age_class == "sapling") {
+  y <- 10
+} else if (age_class == "seedling") {
+  y <- 5
+}
+
+#2.
+age_class <- "seedling"
+if (age_class == "sapling") {
+  y <- 10
+} else if (age_class == "seedling") {
+  y <- 5
+} else if (age_class == "adult") {
+  
+}
+  
+
+
+
+
+
+
   
