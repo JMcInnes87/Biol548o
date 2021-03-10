@@ -47,6 +47,30 @@ if (age_class == "sapling") {
 } else if (age_class == "adult") {
   
 }
+
+#Exercise 4 Dinosaurs 
+get_mass_from_length_by_name<-function(name, length) {
+  if (name == "Stegosauria") {
+    10.95*length^2.64
+  } else if (name == "Theropoda"){
+    0.73*length^3.63
+  } else if (name == "Sauropoda"){
+    214.44*length^1.46
+  } else {
+    NA*length^NA
+    
+  }
+}
+
+#Run fuction for each dinosaur
+get_mass_from_length_by_name("Stegosauria",10)
+get_mass_from_length_by_name("Theropoda",8)
+get_mass_from_length_by_name("Sauropoda",12)
+get_mass_from_length_by_name("Ankylosauria",13)
+
+  
+
+  
   
 
 
